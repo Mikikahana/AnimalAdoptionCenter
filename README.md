@@ -12,7 +12,7 @@
 ## General Information
 This project, part of Flatiron Software Engineering track, Phase 2, focused on implementing a get server request from an external API and using that data to build out a front end page to display that data. We worked in a group of 4 to complete this task.
 
-Phase 1 Project for Flatiron School: Animal Adoption Center: 
+Phase 2 Project for Flatiron School: Animal Adoption Center: 
 Check out our live frontend here
 
 ## Github Repo
@@ -22,6 +22,7 @@ Check out our live frontend here
 - javascript
 - html
 - css
+- react
 
 ### Backend API Endpoints
 
@@ -32,6 +33,8 @@ Check out our live frontend here
 | GET    | /name               |                  | returns name of the dog                              |
 | GET    | /image              |                  | returns image of the dog                             |
 | GET    | /isAdopted          |                  | returns a true/false value of if the dog is adopted  |
+| POST   | /pets               |                  | posts a new object into the pets array               |
+| PATCH  | /likes              |                  | updates the current amount of likes                  |
 
 
 ## Environment Setup
