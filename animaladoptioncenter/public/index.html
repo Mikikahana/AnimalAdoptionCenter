@@ -1,43 +1,114 @@
+
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<html>
+<head>
+    <title>Puppy Pet Adoption</title>
+    <link href = "style.css" rel = "stylesheet">
+</head>
+<body>
+  <div id="root"></div>
+    <header>
+        <h1>Puppy Pet Adoption
+        </h1>
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+        <form>
+            <input type="text" placeholder="Search for a puppy..." id="search-input">
+            <button type="submit" id="search-button">Search</button>
+        </form>
+    </header>
+    <!-- website content goes here -->
+    <div class="puppy-adoption-container">
+        <div class="puppy-box" id="puppy1">
+          <img class="puppy-image" src="puppy1.jpg" alt="Puppy 1">
+          <h3 class="puppy-name">Puppy 1</h3>
+          <button class="adopt-button">Adopt me</button>
+          <button class="like-button">Like</button>
+        </div>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+        <div class="puppy-box" id="puppy2">
+          <img class="puppy-image" src="puppy2.jpg" alt="Puppy 2">
+          <h3 class="puppy-name">Puppy 2</h3>
+          <button class="adopt-button">Adopt me </button>
+          <button class="like-button">Like</button>
+        </div>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+   
+
+          <div class="puppy-box" id="puppy3">
+            <img class="puppy-image" src="puppy2.jpg" alt="Puppy 3">
+            <h3 class="puppy-name">Puppy 3</h3>
+            <button class="adopt-button">Adopt me</button>
+            <button class="like-button">Like</button>
+          </div>
+
+
+
+          <div class="puppy-box" id="puppy4">
+            <img class="puppy-image" src="puppy2.jpg" alt="Puppy 4">
+            <h3 class="puppy-name">Puppy 4</h3>
+            <button class="adopt-button">Adopt me</button>
+            <button class="like-button">Like</button>
+          </div>
+
+
+          <div class="puppy-box" id="puppy5">
+            <img class="puppy-image" src="puppy2.jpg" alt="Puppy 5">
+            <h3 class="puppy-name">Puppy 5</h3>
+            <button class="adopt-button">Adopt me</button>
+            <button class="like-button">Like</button>
+          </div>
+
+          <div class="puppy-box" id="puppy6">
+            <img class="puppy-image" src="puppy2.jpg" alt="Puppy 6">
+            <h3 class="puppy-name">Puppy 6</h3>
+            <button class="adopt-button">Adopt me</button>
+            <button class="like-button">Like</button>
+          </div>
+
+          <div class="puppy-box" id="puppy7">
+            <img class="puppy-image" src="puppy2.jpg" alt="Puppy 7">
+            <h3 class="puppy-name">Puppy 7</h3>
+            <button class="adopt-button">Adopt me</button>
+            <button class="like-button">Like</button>
+          </div>
+
+          <div class="puppy-box" id="puppy8">
+            <img class="puppy-image" src="puppy2.jpg" alt="Puppy 8">
+            <h3 class="puppy-name">Puppy 8</h3>
+            <button class="adopt-button">Adopt me</button>
+            <button class="like-button">Like</button>
+          </div>
+
+          <div class="puppy-box" id="puppy9">
+            <img class="puppy-image" src="puppy2.jpg" alt="Puppy 9">
+            <h3 class="puppy-name">Puppy 9</h3>
+            <button class="adopt-button">Adopt me</button>
+            <button class="like-button">Like</button>
+          </div>
+
+          <div class="puppy-box" id="puppy10">
+            <img class="puppy-image" src="puppy2.jpg" alt="Puppy 10">
+            <h3 class="puppy-name">Puppy 10</h3>
+            <button class="adopt-button">Adopt me</button>
+            <button class="like-button">Like</button>
+          </div>
+
+
+        <!-- Add more puppy boxes as needed -->
+      </div>
+      <footer>
+ <h2>Add a new puppy</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" placeholder="Name" id="name" class="round-input">
+            <label for="age">Age:</label>
+            <input type="text" placeholder="Age" id="age" class="round-input">
+            <label for="image">Image:</label>
+            <input type="file" id="image" class="round-input">
+            <label for="description">Description:</label>
+            <textarea id="description" class="round-input"></textarea>
+            <button type="submit" id="upload-button" class="round-input">Upload</button>
+        </form>
+      </footer>
+</body>
 </html>
