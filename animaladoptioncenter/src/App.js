@@ -3,6 +3,9 @@ import React, { useState, useEffect } from "react"
 import DogContainer from './DogContainer';
 import Header from './Header';
 import HomePage from './HomePage'
+import AdoptedPets from './AdoptedPets';
+
+
 function App()
 {
   const [pets, setPets] = useState([])
@@ -14,11 +17,11 @@ function App()
         return resp.json()
       })
       .then(function (data)
-      {console.log(data)
+      {
         return setPets(data)
-        
       })
   }, [])
+
   function handleUpdatedPets(updatedPet)
   {
     const updatedPetList = pets.map(function (pet)
@@ -31,28 +34,46 @@ function App()
       }
     })
     setPets(updatedPetList)
+
+    const dogsAdopted = adopted.find(function (dog)
+    {
+      return dog.id === updatedPet.id
+    })
+    if (!dogsAdopted) {
+      setAdopted([...adopted, updatedPet])
+    }
   }
+
   const [searchInput, setSearchInput] = useState("")
   function handleSearchInput(e)
   {
     setSearchInput(e.target.value)
   }
+
   const filterDogs = pets.filter(function (pet)
   {
     return pet.name.toLowerCase().includes(searchInput.toLowerCase())
   })
+
   function handleNewDog(newDog)
   {
     setPets([...pets, newDog])
   }
+
+  const [adopted, setAdopted] = useState([])
+
+  console.log(adopted)
+
   return (
     <div className="App">
       <Header handleSearchInput={handleSearchInput} handleNewDog={handleNewDog} />
       <HomePage />
       <DogContainer pets={filterDogs} handleUpdatedPets={handleUpdatedPets} />
+      <AdoptedPets pets={pets} />
     </div>
   );
 }
+
 export default App
 
 
