@@ -51,8 +51,8 @@ function Header({ handleSearchInput, handleNewDog })
     }
     return (
         <div className="title">
-            <h1>Pet Adoption Center</h1>
-            <h3>New Puppy</h3>
+            <h1 className='title-h1'>Pet Adoption Center</h1>
+            <h3 className='title-h1'>New Puppy</h3>
             <form onSubmit={handleSubmit}>
                 <input type="text" name="name" placeholder="Dog name" onChange={handleNameInput} />
                 <input type="text" name="image" placeholder="Image URL" onChange={handleImageInput} />
