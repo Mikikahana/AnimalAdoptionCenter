@@ -23,7 +23,7 @@
             "breed": "Poodle",
             "gender": "male",
             "name": "Charlie",
-            "image": "https://files.slack.com/files-pri/T02MD9XTF-F04JD3YK7JR/img_5079.jpg",
+            "image": "https://tse4.mm.bing.net/th?id=OIP.p2XuUlCCqGPwrvhwZLpu-gHaKD&pid=Api&P=0",
             "likes": 0,
             "isAdopted": false
         },
@@ -137,10 +137,10 @@
         },
         {
             "id": 16,
-            "breed": "Unknown",
+            "breed": "Kooikerhondje",
             "gender": "male",
             "name": "Pancake",
-            "image": "https://files.slack.com/files-tmb/T02MD9XTF-F04JFGHF03V-84816cae27/pancake_and_ball_720.png",
+            "image": "https://tse2.mm.bing.net/th?id=OIP.KrkKB4FyhxvWSOpGo1tG8wHaE7&pid=Api&P=0",
             "likes": 0,
             "isAdopted": false
         },
