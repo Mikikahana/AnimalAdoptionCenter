@@ -6,7 +6,7 @@
       "gender": "Male",
       "name": "Max",
       "image": "https://i.etsystatic.com/8732782/r/il/ae7da9/1525391545/il_570xN.1525391545_2uoc.jpg",
-      "likes": 0,
+      "likes": 4,
       "isAdopted": true
     },
     {
@@ -42,7 +42,7 @@
       "gender": "Male",
       "name": "Buddy",
       "image": "https://i.pinimg.com/originals/51/a6/ea/51a6eae1f8f039771e2834b1bae3ac1f.jpg",
-      "likes": 0,
+      "likes": 3,
       "isAdopted": false
     },
     {
@@ -61,7 +61,7 @@
       "name": "Rocky",
       "image": "https://i.pinimg.com/736x/c3/48/eb/c348eb216daef2340216994d1895954d--rottweiler-puppies-puppies-puppies.jpg",
       "likes": 0,
-      "isAdopted": false
+      "isAdopted": true
     },
     {
       "id": 8,
@@ -96,7 +96,7 @@
       "gender": "Male",
       "name": "Toto",
       "image": "https://cdn.shopify.com/s/files/1/0080/2970/0176/files/ultimate-chihuahua-dog-puppy-guide-pocopet-2_480x480.jpg?v=1627316231",
-      "likes": 0,
+      "likes": 2,
       "isAdopted": false
     },
     {
