@@ -1,5 +1,6 @@
 import SearchForm from './SearchForm'
 import React, { useState } from 'react'
+import {Link, NavLink} from 'react-router-dom'
 function Header({ handleSearchInput, handleNewDog })
 {
     const [nameInput, setNameInput] = useState("")
@@ -51,7 +52,7 @@ function Header({ handleSearchInput, handleNewDog })
     }
     return (
         <div className="title">
-            <h1 className='title-h1'>Pet Adoption Center</h1>
+            <Link to="/" className='title-h1'>Pet Adoption Center</Link>
             <h3 className='title-h1'>New Puppy</h3>
             <form onSubmit={handleSubmit}>
                 <input type="text" name="name" placeholder="Dog name" onChange={handleNameInput} />

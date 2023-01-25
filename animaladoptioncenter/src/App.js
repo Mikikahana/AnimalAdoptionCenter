@@ -2,8 +2,9 @@ import './App.css';
 import React, { useState, useEffect } from "react"
 import DogContainer from './DogContainer';
 import Header from './Header';
-import HomePage from './HomePage'
+// import HomePage from './HomePage'
 import AdoptedPets from './AdoptedPets';
+import {Switch, Route} from 'react-router-dom';
 
 
 function App()
@@ -67,9 +68,16 @@ function App()
   return (
     <div className="App">
       <Header handleSearchInput={handleSearchInput} handleNewDog={handleNewDog} />
-      <HomePage />
-      <DogContainer pets={filterDogs} handleUpdatedPets={handleUpdatedPets} />
-      <AdoptedPets pets={pets} />
+    <Switch>
+      {/* <HomePage /> */}
+      <Route>
+        <DogContainer pets={filterDogs} handleUpdatedPets={handleUpdatedPets} />
+      </Route>
+      
+      <Route>
+        <AdoptedPets pets={pets} />
+      </Route>
+    </Switch>
     </div>
   );
 }
