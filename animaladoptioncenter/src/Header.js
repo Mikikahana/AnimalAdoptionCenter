@@ -56,8 +56,8 @@ function Header({ handleSearchInput, handleNewDog })
             <form onSubmit={handleSubmit}>
                 <input type="text" name="name" placeholder="Dog name" onChange={handleNameInput} />
                 <input type="text" name="image" placeholder="Image URL" onChange={handleImageInput} />
-                <input type="text" name="breed" placeholder="breed" onChange={handleBreedInput} />
-                <input type="text" name="gender" placeholder="gender" onChange={handleGenderInput} />
+                <input type="text" name="breed" placeholder="Breed" onChange={handleBreedInput} />
+                <input type="text" name="gender" placeholder="Gender" onChange={handleGenderInput} />
                 <button type="submit">Add Puppy</button>
             </form>
             <br></br>
