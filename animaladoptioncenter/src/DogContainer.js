@@ -1,7 +1,7 @@
 import DogCard from "./DogCard"
 import SearchForm from "./SearchForm"
 
-function DogContainer({ pets, handleUpdatedPets, handleSearchInput }) {
+function DogContainer({ pets, handleUpdatedPets}) {
 
 
     const mappedPets = pets.map(function (pet) {
@@ -15,7 +15,7 @@ function DogContainer({ pets, handleUpdatedPets, handleSearchInput }) {
     return (
        
         <div className="puppy-adoption-container">
-             <SearchForm  handleSearchInput={handleSearchInput}/>
+          
             {mappedPets}
         </div>
     )

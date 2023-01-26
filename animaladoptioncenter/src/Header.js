@@ -1,7 +1,7 @@
-
+import SearchForm from './SearchForm'
 import { Link, NavLink } from 'react-router-dom'
 
-function Header() {
+function Header({handleSearchInput}) {
 
     return (
 
@@ -12,25 +12,34 @@ function Header() {
                 Main Page
             </Link>
           
-
+<br></br>
             
             <NavLink to="/pups">
                Pups that need a home 
              </NavLink>
             
-
+             <br></br>
 
         <NavLink exact to="/pups/adopted">
         Pups already adopted
         </NavLink>
-
+        
+        <br></br>
 
         <NavLink to = "/pups/new">
             Add a new Puppy
          </NavLink>
 
+<br></br>
+<br></br>
+
+
+
+<SearchForm  handleSearchInput={handleSearchInput}/>
         </div>
+       
     )
+
 }
 
 

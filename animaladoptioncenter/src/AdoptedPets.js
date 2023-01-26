@@ -9,7 +9,7 @@ function AdoptedPets({ pets })
         }
     })
     return (
-        <div>
+        <div className="puppy-adoption-container">
             {mappedAdopted}
         </div>
     )
