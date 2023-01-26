@@ -1,6 +1,10 @@
+
+
 import SearchForm from './SearchForm'
 import React, { useState } from 'react'
-function Header({ handleSearchInput, handleNewDog })
+import {Link,NavLink} from 'react-router-dom'
+
+function AddNewDogForm({ handleNewDog })
 {
     const [nameInput, setNameInput] = useState("")
     const [imageInput, setImageInput] = useState("")
@@ -50,10 +54,8 @@ function Header({ handleSearchInput, handleNewDog })
             })
     }
     return (
-
-        <div className="title">
-            <h1 className='title-h1'>Pet Adoption Center</h1>
-            <h3 className='title-h1'>New Puppy</h3>
+        <div> 
+             <h3 className='title-h1'>New Puppy</h3>
             <form onSubmit={handleSubmit}>
                 <input type="text" name="name" placeholder="Dog name" onChange={handleNameInput} />
                 <input type="text" name="image" placeholder="Image URL" onChange={handleImageInput} />
@@ -62,14 +64,9 @@ function Header({ handleSearchInput, handleNewDog })
                 <button type="submit">Add Puppy</button>
             </form>
             <br></br>
-            <SearchForm handleSearchInput={handleSearchInput} />
-        </div>
+         
+        </div> 
     )
 }
+export default AddNewDogForm
 
-
-               
-
-        
-
-export default Header
