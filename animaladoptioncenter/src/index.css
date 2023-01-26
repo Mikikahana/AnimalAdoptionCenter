@@ -2,6 +2,10 @@ body{
   background-color: white;
 }
 
+a {
+  color: white;
+}
+
 /* style for the header */
 .title {
   background-color: #435A7D;

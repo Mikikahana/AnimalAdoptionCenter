@@ -2,7 +2,7 @@ import './App.css';
 import React, { useState, useEffect } from "react"
 import DogContainer from './DogContainer';
 import Header from './Header';
-// import HomePage from './HomePage'
+import HomePage from './HomePage'
 import AdoptedPets from './AdoptedPets';
 import AddNewDogForm from './AddNewDogForm';
 import { Switch, Route } from 'react-router-dom'
