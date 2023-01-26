@@ -8,25 +8,25 @@ function Header({handleSearchInput}) {
         <div className="title">
 <h1 className='title-h1'>Pet Adoption Center</h1>
           
-            <Link to="/">
+            <Link to="/" className='button'>
                 Main Page
             </Link>
           
 <br></br>
             
-            <NavLink to="/pups">
+            <NavLink to="/pups" className="button">
                Pups that need a home 
              </NavLink>
             
              <br></br>
 
-        <NavLink exact to="/pups/adopted">
+        <NavLink exact to="/pups/adopted" className="button">
         Pups already adopted
         </NavLink>
         
         <br></br>
 
-        <NavLink to = "/pups/new">
+        <NavLink to = "/pups/new" className="button">
             Add a new Puppy
          </NavLink>
 
