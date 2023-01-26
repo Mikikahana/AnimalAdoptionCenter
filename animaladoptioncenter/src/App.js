@@ -42,6 +42,7 @@ function App() {
   const [searchInput, setSearchInput] = useState("")
   function handleSearchInput(e) {
     setSearchInput(e.target.value)
+    console.log(e.target.value)
   }
 
   const filterDogs = pets.filter(function (pet) {
@@ -60,19 +61,20 @@ function App() {
 
     <div className="App">
     
-      <Header exact path = "/" />
+      <Header handleSearchInput={handleSearchInput}/>
       
-{/* //the main page should have <Router exact path = "root URL here" */}
+
 
       <Switch> 
 
-        {/* <Route>
-          <HomePage />
-        </Route> */}
+        <Route exact path = "/">
+          <HomePage pets = {filterDogs} handleSearchInput=
+          {handleSearchInput} handleUpdatedPets={handleUpdatedPets}/>
+        </Route>
         
        
         <Route path = "/pups/adopted">
-          <AdoptedPets pets={pets} />
+          <AdoptedPets pets={filterDogs} />
         </Route>
 
         <Route path = "/pups/new">

@@ -15,7 +15,7 @@
       "gender": "Female",
       "name": "Lucy",
       "image": "https://d1bbcn6xx8qu3z.cloudfront.net/sites/default/files/styles/full_size/public/field/image/blog_post/import_62e2aa4e61fb01.77777319-921709741.jpg?itok=UiTxTxWB",
-      "likes": 0,
+      "likes": 3,
       "isAdopted": false
     },
     {
@@ -60,7 +60,7 @@
       "gender": "Male",
       "name": "Rocky",
       "image": "https://i.pinimg.com/736x/c3/48/eb/c348eb216daef2340216994d1895954d--rottweiler-puppies-puppies-puppies.jpg",
-      "likes": 0,
+      "likes": 1,
       "isAdopted": true
     },
     {
