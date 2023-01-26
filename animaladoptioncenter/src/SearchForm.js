@@ -2,7 +2,7 @@ function SearchForm({ handleSearchInput })
 {
     return (
         <div className="searchbar">
-            <label htmlFor="search">Search Dogs:</label>
+            <label htmlFor="search"> Find a puppy here: </label>
             <input
                 type="text"
                 id="search"

@@ -45,7 +45,7 @@ function DogCard({ pet, handleUpdatedPets })
             <p>{gender}</p>
             <br></br>
             <button 
-                className={isAdopted === true ? "adopt-button" : "adopt-button"}    onClick={handleClick}>{isAdopted ? "Adopted" : "Adopt pet"}
+                className={isAdopted === true ? "adopt-button" : "adopt-button"}    onClick={handleClick}>{isAdopted ? "Adopted" : "Adopt me"}
             </button>
             <button className="like-button" onClick={handleLike}>
                 ❤ {likesInput}
