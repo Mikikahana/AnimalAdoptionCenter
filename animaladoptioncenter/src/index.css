@@ -36,6 +36,13 @@ a {
   margin: 300;
   font-family: 'M PLUS Rounded 1c', sans-serif;
 }
+.link-container {
+ display: flex;
+ justify-content: center;
+ gap: 1rem;
+ align-items: center;
+ padding: 1rem;
+}
 
 .puppy-adoption-container {
   display: flex;
